@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "127.0.0.1";
+$username = "user";
+$password = "1234";
 $database = "CartaWeb";
 
 // Create connection
