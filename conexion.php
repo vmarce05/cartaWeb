@@ -1,11 +1,10 @@
 <?php
-$servername = "127.0.0.1";
-$username = "user";
-$password = "1234";
-$database = "CartaWeb";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("databaseuser");
+$dbpwd = getenv("databasepassword");
+$dbname = "CartaWeb";
+$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
